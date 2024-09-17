@@ -1,0 +1,16 @@
+.hero {
+    background-image: url(../../../assets/bg-flare.webp);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: auto;
+
+    max-width: 1312px;
+    width: 100%;
+    padding: 56px;
+    border-radius: 48px;
+    margin-top: 120px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}

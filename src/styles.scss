@@ -6,6 +6,8 @@
     --body-text: #b3b3b3;
     --outline: #2d2d39;
     --teal-500: #33ffcf;
+    --dark-teal: rgba(45, 212, 191, .1);
+    --dark-gray: rgb(94, 96, 99);
 }
 
 body {
@@ -26,6 +28,10 @@ a {
   &:hover {
     color: var(--teal-500)
   }
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 // CSS RESET

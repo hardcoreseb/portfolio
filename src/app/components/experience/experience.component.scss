@@ -1,13 +1,19 @@
-.projects {
+#experience {
+    scroll-margin-top: 105px;
+}
+
+.experiences {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     width: fit-content;
     margin-inline: auto;
+    margin-top: 32px;
+    margin-bottom: 64px;
 }
 
-.project-wrapper {
+.experience-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -31,7 +37,7 @@
             fill: var(--teal-500);
         }
 
-        .project-link {
+        .experience-link {
             color: var(--teal-500);
         }
 
@@ -41,21 +47,35 @@
     }
 }
 
-.projects:hover .project-wrapper {
+.experiences:hover .experience-wrapper {
     opacity: .4;
 }
 
-.projects .project-wrapper:hover {
+.experiences .experience-wrapper:hover {
     opacity: 1;
 }
 
 
-.project-title {
+
+.time-range {
+    letter-spacing: .025em;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: .75rem;
+    color: rgb(94, 96, 99);
+
+    margin-top: 16px;
+    margin-bottom: auto;    
+
+    min-width: 128px;
+}
+
+.experience-title {
     font-weight: 500;
     margin: 16px;
 }
 
-.project-link {
+.experience-link {
     transition-duration: .25s;
     transition-timing-function: cubic-bezier(.4, 0, .2, 1);
     transition-property: all;
@@ -73,7 +93,7 @@
    }
 }
 
-.project-desc {
+.experience-desc {
     color: var(--body-text);
     margin: 16px;
 }

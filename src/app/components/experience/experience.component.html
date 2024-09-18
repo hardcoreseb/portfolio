@@ -1,0 +1,23 @@
+<section id="experience">
+    <ul class="experiences">
+        <li class="experience-wrapper" *ngFor="let experience of experiences" (click)="openNewTab(experience.url)">
+            <div class="time-range"> {{ experience.dateRange }}</div>
+            <div class="experience-text">
+                <h3 class="experience-title">
+                    <a [href]="experience.url" class="experience-link" target="_blank">
+                        {{ experience.jobtitle }} · {{ experience.company}}
+                        <svg class="new-tab" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+                            <path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"/>
+                        </svg>
+                    </a>
+                </h3>
+                <p class="experience-desc">
+                    {{  experience.description }}
+                </p>
+                <div class="pill-container" *ngIf="checkTechnologiesArray(experience)">
+                    <span *ngFor="let tech of experience.technologies" class="tech-pill">{{ tech }}</span>
+                </div>
+            </div>
+        </li>
+    </ul>
+</section>

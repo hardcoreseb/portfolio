@@ -81,3 +81,21 @@ ul {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     width: 200px;
 }
+
+.pill-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tech-pill {
+    margin-top: .5rem;
+    margin-left: 16px;
+    padding: 4px 12px;
+    border-radius: 9999px;
+
+    color: var(--teal-500);
+    background-color: rgba(45, 212, 191, .1);
+    
+    font-weight: 500;
+    font-size: .75rem;
+}

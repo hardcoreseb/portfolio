@@ -13,6 +13,9 @@
             <p class="project-desc">
                 {{  project.description }}
             </p>
+            <div class="pill-container" *ngIf="checkTechnologiesArray(project)">
+                <span *ngFor="let tech of project.technologies" class="tech-pill">{{ tech }}</span>
+            </div>
         </div>
     </li>
 </ul>

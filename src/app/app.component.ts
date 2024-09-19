@@ -5,6 +5,7 @@ import { HeroComponent } from './components/hero/hero.component';
 import { NavbarComponent } from "./components/navbar/navbar.component";
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ExperienceComponent } from './components/experience/experience.component';
+import { SectionSeperatorComponent } from './components/section-seperator/section-seperator.component';
 
 @Component({
   selector: 'app-root',
@@ -15,7 +16,8 @@ import { ExperienceComponent } from './components/experience/experience.componen
     HeroComponent, 
     NavbarComponent, 
     ProjectsComponent, 
-    ExperienceComponent
+    ExperienceComponent,
+    SectionSeperatorComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'

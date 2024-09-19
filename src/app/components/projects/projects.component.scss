@@ -5,6 +5,8 @@
     flex-direction: column;
     width: fit-content;
     margin-inline: auto;
+    margin-top: 64px;
+    margin-bottom: 100px;
 }
 
 .project-wrapper {
@@ -38,6 +40,14 @@
         .thumbnail {
             border-color: rgba(226, 232, 240, .3);;
         }
+    }
+
+    &:first-child {
+        margin-top: 0;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
     }
 }
 

@@ -30,7 +30,7 @@ export class ExperienceComponent {
       'Main focus was on maintaining the construct of the company code. It was written in a company-designed framework existing off HTML and PHP. Features and Bugfixes were also written in said framework.',
       'https://www.medicomp.de/',
       'August 2024 - September 2024',
-      ['PHP', 'HTML']
+      ['HTML', 'PHP']
     ),
     new Experience(
       'Apprenticeship as Computer Science Expert in the Subject Area: Software Development',

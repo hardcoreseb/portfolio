@@ -6,6 +6,8 @@ import { NavbarComponent } from "./components/navbar/navbar.component";
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ExperienceComponent } from './components/experience/experience.component';
 import { SectionSeperatorComponent } from './components/section-seperator/section-seperator.component';
+import { MouseGlowComponent } from './components/mouse-glow/mouse-glow.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @Component({
   selector: 'app-root',
@@ -17,7 +19,9 @@ import { SectionSeperatorComponent } from './components/section-seperator/sectio
     NavbarComponent, 
     ProjectsComponent, 
     ExperienceComponent,
-    SectionSeperatorComponent
+    SectionSeperatorComponent,
+    MouseGlowComponent,
+    FooterComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'

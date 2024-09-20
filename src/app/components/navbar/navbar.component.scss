@@ -13,6 +13,15 @@
     inset: 0% 0% auto;
 }
 
+.logo {
+    width: 3.5rem;
+    transition: .3s ease-in-out;
+
+    &:hover {
+        transform: scale(1.3);
+    }
+}
+
 .nav-content {
     -webkit-backdrop-filter: blur(12px);
     backdrop-filter: blur(12px);

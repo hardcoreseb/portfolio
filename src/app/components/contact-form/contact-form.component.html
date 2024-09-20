@@ -10,8 +10,12 @@
                 placeholder=""
                 formControlName="from_name"
                 required
+                [class.invalid]="hasError('from_name', 'required')"
             >
             <label class="label required" title="Full Name (required)" for="name">Full Name</label>
+            <div *ngIf="hasError('from_name', 'required')" class="error-message">
+                Full Name is required
+            </div>
         </div>
         <div class="email-field input-container">
             <input 
@@ -23,8 +27,12 @@
                 inputmode="email"
                 formControlName="from_email"
                 required
+                [class.invalid]="hasError('from_email', 'required') || hasError('from_email', 'email')"
             >
             <label class="label required" title="Email Address (required)" for="email">Email Address</label>
+            <div *ngIf="hasError('from_email', 'required')" class="error-message">
+                Email is required
+            </div>
         </div>
         <div class="subject-field input-container">
             <input 
@@ -35,8 +43,12 @@
                 placeholder=""
                 formControlName="subject"
                 required
+                [class.invalid]="hasError('subject', 'required')"
             >
             <label class="label required" title="Subject (required)" for="subject">Subject</label>
+            <div *ngIf="hasError('subject', 'required')" class="error-message">
+                Subject is required
+            </div>
         </div>
         <div class="message-field input-container">
             <textarea 
@@ -46,8 +58,12 @@
                 placeholder=""
                 formControlName="message"
                 required
+                [class.invalid]="hasError('message', 'required')"
             ></textarea>
             <label class="label required" title="Message (required)" for="message">Message</label>
+            <div *ngIf="hasError('message', 'required')" class="error-message">
+                Message is required
+            </div>
         </div>
         <div class="button-container">
             <button class="submit-btn" type="submit">Send</button>

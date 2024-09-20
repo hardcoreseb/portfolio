@@ -6,6 +6,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 200px;
     margin-bottom: 100px;
 }
 
@@ -175,4 +176,9 @@ textarea {
         --tealColor: white;
         --greenColor: white;
     }
+}
+
+.error-message {
+    margin-left: 30px;
+    color: var(--warning-color);
 }

@@ -15,7 +15,9 @@
     --test-blue: rgb(29, 78, 216, 0.15)
     --scrollbar-track: #232E33;
     --scrollbar-thumb: #a2a2a2;
-}
+    --error-color: #ff3363;
+    --warning-color: #ff6933;
+  }
 
 body {
     background-color: var(--dark-background);

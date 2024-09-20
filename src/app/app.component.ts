@@ -8,6 +8,7 @@ import { ExperienceComponent } from './components/experience/experience.componen
 import { SectionSeperatorComponent } from './components/section-seperator/section-seperator.component';
 import { MouseGlowComponent } from './components/mouse-glow/mouse-glow.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { ContactFormComponent } from './components/contact-form/contact-form.component';
 
 @Component({
   selector: 'app-root',
@@ -21,7 +22,8 @@ import { FooterComponent } from './components/footer/footer.component';
     ExperienceComponent,
     SectionSeperatorComponent,
     MouseGlowComponent,
-    FooterComponent
+    FooterComponent,
+    ContactFormComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'

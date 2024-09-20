@@ -1,0 +1,57 @@
+<section class="contact-form" id="contact-me">
+    <form action="javascript:void(0);" (submit)="send()" [formGroup]="form">
+        <h2 class="form-headline">Contact Me!</h2>
+        <div class="name-field input-container">
+            <input 
+                class="input"
+                type="text" 
+                name="name" 
+                id="name"
+                placeholder=""
+                formControlName="from_name"
+                required
+            >
+            <label class="label required" title="Full Name (required)" for="name">Full Name</label>
+        </div>
+        <div class="email-field input-container">
+            <input 
+                class="input"   
+                type="email" 
+                name="email" 
+                id="email"
+                placeholder=""
+                inputmode="email"
+                formControlName="from_email"
+                required
+            >
+            <label class="label required" title="Email Address (required)" for="email">Email Address</label>
+        </div>
+        <div class="subject-field input-container">
+            <input 
+                class="input"
+                type="text" 
+                name="subject" 
+                id="subject"
+                placeholder=""
+                formControlName="subject"
+                required
+            >
+            <label class="label required" title="Subject (required)" for="subject">Subject</label>
+        </div>
+        <div class="message-field input-container">
+            <textarea 
+                class="input"
+                name="message" 
+                id="message"
+                placeholder=""
+                formControlName="message"
+                required
+            ></textarea>
+            <label class="label required" title="Message (required)" for="message">Message</label>
+        </div>
+        <div class="button-container">
+            <button class="submit-btn" type="submit">Send</button>
+        </div>
+    </form>
+</section>
+{{form.value | json }}

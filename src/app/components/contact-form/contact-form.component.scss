@@ -18,7 +18,7 @@ form {
     gap: 32px;
     min-width: 800px;
 
-    background-color: var(--form-background);
+    background-color: var(--high-opac);
     border-radius: 48px;
     padding: 32px 48px 64px 48px;
 }
@@ -58,11 +58,11 @@ textarea {
 }
 
 input {
-    border-radius: 100px;
+    border-radius: 8px;
     font-size: 1.2rem;
     font-weight: 500;
     min-width: min-content;
-    width: 40ch;
+    width: 45ch;
 }
 
 textarea {
@@ -130,9 +130,8 @@ textarea {
     border-radius: 10px;
 }
 
-.subject-field > input, 
 .message-field > textarea {
-    min-width: 500px;
+    width: 55ch;
 }
 
 .message-field > textarea {
@@ -164,17 +163,22 @@ textarea {
     background: -webkit-linear-gradient(var(--tealColor), var(--greenColor));
     border-radius: 1000px;
     padding: 16px 24px;
-    border: 0;
+    border: 1px solid var(--high-opac);
     cursor: pointer;
 
     font-size: 1.2rem;
     font-weight: 500;
 
-    transition: --tealColor .3s ease-in-out, --greenColor .3s ease-in-out;
+    transition: border .3s ease-in-out;
 
     &:hover {
-        --tealColor: white;
-        --greenColor: white;
+        border: 1px solid var(--teal-500);
+
+        background: -webkit-linear-gradient(135deg, #32ffce, #5efe90);
+        background: linear-gradient(135deg, #32ffce, #5efe90);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 }
 

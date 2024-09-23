@@ -27,3 +27,16 @@
     font-weight: 300;
     color: var(--body-text);
 }
+
+footer {
+    a {
+
+        &::-moz-selection { /* Code for Firefox */
+            text-decoration: underline;
+        }
+
+        &::selection {
+            text-decoration: underline;
+      }
+    }
+  }

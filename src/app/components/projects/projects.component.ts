@@ -29,13 +29,6 @@ export class ProjectsComponent {
       '../../../assets/youtube2spotify.webp',
       ['Python', 'Spotify API', 'Youtube API']
     ),
-    new Project(
-      'Image to WebP Converter',
-      'WIP',
-      'WIP',
-      'WIP',
-      ['']
-    )
   ]
 
 }

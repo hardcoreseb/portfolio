@@ -15,7 +15,7 @@ export class ContactFormComponent {
   form: FormGroup = this.fb.group({
     to_name: 'Sebastian',
     from_name: ['', Validators.required],
-    from_email: ['', Validators.required, Validators.email],
+    from_email: ['', [Validators.required, Validators.email]],
     subject: ['', Validators.required],
     message: ['', Validators.required]
   }
@@ -40,6 +40,14 @@ export class ContactFormComponent {
       this.form.reset();
     }
     else {
+      // Check which field has errors
+    //   Object.keys(this.form.controls).forEach(field => {
+    //   const control = this.form.get(field);
+    //   if (control?.errors) {
+    //     console.log(`${field} has errors: `, control.errors);
+    //   }
+    // });
+      
       alert('Please fill in all required fields correctly.')
 
       this.form.markAllAsTouched();

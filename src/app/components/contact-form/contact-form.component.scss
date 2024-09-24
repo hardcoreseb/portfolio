@@ -188,3 +188,18 @@ textarea {
     margin-left: 30px;
     color: var(--warning-color);
 }
+
+@media screen and (max-width: 479px) {  
+    form {
+        min-width: 0;
+        width: 90%;
+
+        input{
+            width: 30ch;
+        }
+
+        .message-field > textarea {
+            width: 37ch;
+        }
+    }
+}

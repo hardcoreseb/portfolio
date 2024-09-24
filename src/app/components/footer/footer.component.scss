@@ -37,6 +37,13 @@ footer {
 
         &::selection {
             text-decoration: underline;
-      }
+        }
     }
-  }
+}
+
+@media screen and (max-width: 479px) {
+    .left,
+    .right {
+        width: 0;
+    }
+}

@@ -38,7 +38,10 @@ export class ExperienceComponent {
       'Trained Fullstack Developer with focus on Frontend Development. Leading of small projects while incorporating user stories and working with different teams. Working with the UI/UX team to create high quality Web-Apps that contain the basics of accessibility.',
       'https://www.jobrouter.com/en/',
       'August 2022 - July 2024',
-      ['HTML', 'SCSS', 'JavaScript', 'TypeScript', 'Angular', 'Storybook', 'PHP', 'FatFree', 'Symfony']
+      [
+        'HTML', 'SCSS', 'JavaScript', 'TypeScript', 'Angular', 'Storybook','PHP', 'FatFree', 
+        'Symfony', 'Docker'
+      ]
     ),
     new Experience(
       'Apprenticeship as Computer Science Expert in the Subject Area: Software Development',

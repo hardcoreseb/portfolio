@@ -1,5 +1,15 @@
 #projects {
     scroll-margin-top: 120px;
+    position: relative;
+}
+
+.projects-headline {
+    color: var(--dark-teal);
+    font-size: 4rem;
+    font-weight: 700;
+    position: absolute;
+    top: -30px;
+    left: 30%;
 }
 
 .projects {
@@ -123,4 +133,19 @@ ul {
     
     font-weight: 500;
     font-size: .75rem;
+}
+
+@media screen and (max-width: 479px) {  
+    .projects-headline {
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .project-wrapper {
+        flex-direction: column;
+
+        &:first-child {
+            margin-top: 32px;
+        }
+    }
 }

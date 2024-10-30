@@ -1,5 +1,5 @@
 #experience {
-    scroll-margin-top: 120px;
+    scroll-margin-top: 140px;
     position: relative;
 }
 
@@ -8,7 +8,7 @@
     font-size: 4rem;
     font-weight: 700;
     position: absolute;
-    top: -30px;
+    top: -40px;
     left: 30%;
 }
 
@@ -150,8 +150,17 @@ ul {
 }
 
 @media screen and (max-width: 479px) {  
+    #experience {
+        scroll-margin-top: 200px;
+    }
+
     .exp-headline {
+        top: -80px;
         left: 50%;
         transform: translate(-50%);
+    }
+
+    .experiences {
+        margin-top: 150px;
     }
 }

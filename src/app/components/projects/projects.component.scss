@@ -1,5 +1,5 @@
 #projects {
-    scroll-margin-top: 120px;
+    scroll-margin-top: 130px;
     position: relative;
 }
 
@@ -136,9 +136,18 @@ ul {
 }
 
 @media screen and (max-width: 479px) {  
+    #projects {
+        scroll-margin-top: 180px;
+    }
+
     .projects-headline {
+        top: -75px;
         left: 50%;
         transform: translate(-50%);
+    }
+
+    .projects {
+        margin-top: 120px;
     }
 
     .project-wrapper {

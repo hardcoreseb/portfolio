@@ -2,7 +2,7 @@
     <h2 class="projects-headline">Projects</h2>
     <ul class="projects">
         <li class="project-wrapper" *ngFor="let project of projects" (click)="openNewTab(project.url)">
-            <img [src]="project.image" [alt]="project.title +  ' screen capture'" class="thumbnail">
+            <img [src]="project.image" [alt]="project.title +  ' screen capture'" class="thumbnail" (mouseover)="openImageModal(project.image)" (mouseout)="stopHoverTimer()">
             <div class="project-text">
                 <h3 class="project-title">
                     <a [href]="project.url" class="project-link" target="_blank">
@@ -22,3 +22,8 @@
         </li>
     </ul>
 </section>
+<!-- Modal for image enhancement -->
+<div id="ImgModal" class="modal">
+    <span class="close" (click)="closeImgModal()">&times;</span>
+    <img class="modal-content" id="ImgModalContent">
+</div>

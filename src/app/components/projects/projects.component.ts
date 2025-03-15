@@ -36,7 +36,7 @@ export class ProjectsComponent {
           modal!.style.display = "none";
         }
       };
-    }, 2000);
+    }, 1000);
   }
 
   public stopHoverTimer() {
